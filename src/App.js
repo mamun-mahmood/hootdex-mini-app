@@ -2,6 +2,8 @@ import "./App.css";
 import Home from "./screens/Home";
 import { BrowserRouter } from "react-router-dom";
 import BottomNavbar from "./components/nav/BottomNavbar";
+import { Route, Routes } from "react-router-dom/dist";
+import TokenPage from "./screens/TokenPage";
 
 function App() {
   return (
@@ -9,7 +11,10 @@ function App() {
       <div style={{ position: "relative", zIndex: 1 }}>
         <BottomNavbar />
         <div style={{ padding: 10, paddingBottom: 70 }}>
-          <Home />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/t/:tokenSymbol" element={<TokenPage />} />
+          </Routes>
         </div>
       </div>
     </BrowserRouter>

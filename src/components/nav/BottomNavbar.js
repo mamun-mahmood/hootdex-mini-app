@@ -5,8 +5,10 @@ import SwapHorizontalCircleIcon from "@mui/icons-material/SwapHorizontalCircle";
 import SignalCellularAltIcon from "@mui/icons-material/SignalCellularAlt";
 import Person3Icon from "@mui/icons-material/Person3";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
+import { useNavigate } from "react-router-dom/dist";
 
 const BottomNavbar = () => {
+  const navigate = useNavigate();
   return (
     <div
       style={{
@@ -22,14 +24,14 @@ const BottomNavbar = () => {
         padding: 4,
       }}
     >
-      <IconButton style={{ flex: 1 }}>
+      <IconButton style={{ flex: 1 }} onClick={() => navigate("/")} >
         <HomeOutlinedIcon fontSize="large" style={{ color: "#01402b" }} />
       </IconButton>
       <IconButton style={{ flex: 1 }}>
         <PieChartIcon fontSize="large" style={{ color: "#01402b" }} />
       </IconButton>
       <IconButton style={{ flex: 1 }}>
-        <SwapHorizontalCircleIcon style={{ color: "#01402b", fontSize: 56 }} />
+        <SwapHorizontalCircleIcon style={{ color: "", fontSize: 56 }} />
       </IconButton>
       <IconButton style={{ flex: 1 }}>
         <SignalCellularAltIcon fontSize="large" style={{ color: "#01402b" }} />

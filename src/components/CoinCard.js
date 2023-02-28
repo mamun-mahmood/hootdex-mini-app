@@ -1,9 +1,11 @@
 import { Avatar, Typography } from "@mui/material";
 import React from "react";
+import { useNavigate } from "react-router-dom/dist";
 
 const CoinCard = ({ name, symbol, price, volume, logo }) => {
+  const navigate = useNavigate()
   return (
-    <div className="d-flex-j-between" style={{marginBottom: 10}} >
+    <div className="d-flex-j-between" style={{marginBottom: 10}} onClick={() => navigate(`/t/${symbol}`)} >
       <div className="d-flex-j-between">
         <Avatar src={logo} />
         <div style={{ marginLeft: 5 }}>

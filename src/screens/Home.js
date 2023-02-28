@@ -36,20 +36,6 @@ export default function Home() {
       logo: "https://assets.coingecko.com/coins/images/780/large/bitcoin-cash-circle.png?1594689492",
     },
     {
-      name: "Litecoin",
-      symbol: "LTC",
-      price: "34237.333",
-      volume: "34237.333",
-      logo: "https://assets.coingecko.com/coins/images/2/large/litecoin.png?1547033580",
-    },
-    {
-      name: "EOS",
-      symbol: "EOS",
-      price: "34237.333",
-      volume: "34237.333",
-      logo: "https://assets.coingecko.com/coins/images/738/large/eos-eos-logo.png?1547034481",
-    },
-    {
       name: "Binance Coin",
       symbol: "BNB",
       price: "34237.333",
