@@ -34,7 +34,7 @@ html {
   border: 1px solid #01402b;
 }
 .box-shadow {
-  box-shadow: 1px 1px 1px 2px #01402b;
+  box-shadow: 1px 1px 2px 2px #01402b;
 }
 .padding-5 {
   padding: 5px;
@@ -47,4 +47,8 @@ html {
 }
 .fonst-size-14 {
   font-size: 14px !important;
+}
+.mt-mb-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
