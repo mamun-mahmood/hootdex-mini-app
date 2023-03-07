@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlined";
 import { useState } from "react";
 import CoinCard from "../components/CoinCard";
+import PecuGraph from "../components/PecuGraph";
 export default function Home() {
   const navigate = useNavigate();
   const [availableCoins, setAvailableCoins] = useState([
@@ -53,7 +54,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="d-flex-j-between">
+      {/* <div className="d-flex-j-between">
         <div>
           <p>Lorem, ipsum.</p>
           <h2>$34237.333</h2>
@@ -64,8 +65,9 @@ export default function Home() {
             style={{ color: "#01402b" }}
           />
         </IconButton>
-      </div>
-      <Typography sx={{ mb: 1, fontSize: 18 }}>Watchlist</Typography>
+      </div> */}
+      <PecuGraph/>
+      <Typography sx={{ mb: 1, fontSize: 18 }}>All Tokens</Typography>
       <div className="border-green padding-5 border-radius-10">
         <div className="coin-container">
           {availableCoins?.map((coin) => (
