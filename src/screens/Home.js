@@ -4,6 +4,7 @@ import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlin
 import { useState } from "react";
 import CoinCard from "../components/CoinCard";
 import PecuGraph from "../components/PecuGraph";
+import TopTokens from "../components/TopTokens";
 export default function Home() {
   const navigate = useNavigate();
   const [availableCoins, setAvailableCoins] = useState([
@@ -66,10 +67,13 @@ export default function Home() {
           />
         </IconButton>
       </div> */}
+      <div style={{marginBottom: 10 }}>
       <PecuGraph/>
+      </div>
       <Typography sx={{ mb: 1, fontSize: 18 }}>All Tokens</Typography>
+      {/* <TopTokens */}
       <div className="border-green padding-5 border-radius-10">
-        <div className="coin-container">
+        {/* <div className="coin-container">
           {availableCoins?.map((coin) => (
             <CoinCard
               key={coin.symbol}
@@ -80,7 +84,8 @@ export default function Home() {
               logo={coin.logo}
             />
           ))}
-        </div>
+        </div>*/}
+        <TopTokens/>
       </div>
     </>
   );
